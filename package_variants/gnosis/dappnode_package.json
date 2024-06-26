@@ -1,0 +1,32 @@
+{
+  "name": "gnosis-erigon.dnp.dappnode.eth",
+  "version": "0.1.1",
+  "links": {
+    "api": "http://gnosis-erigon.dappnode:8545",
+    "apiEngine": "http://gnosis-erigon.dappnode:8551",
+    "homepage": "https://github.com/ledgerwatch/erigon"
+  },
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
+  "exposable": [
+    {
+      "name": "Erigon JSON RPC",
+      "description": "JSON RPC endpoint for Erigon in Gnosis Chain",
+      "serviceName": "erigon",
+      "port": 8545
+    },
+    {
+      "name": "Erigon JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Erigon in Gnosis Chain",
+      "serviceName": "erigon",
+      "port": 8545
+    }
+  ],
+  "globalEnvs": [
+    {
+      "envs": ["CONSENSUS_CLIENT_GNOSIS"],
+      "services": ["erigon"]
+    }
+  ]
+}

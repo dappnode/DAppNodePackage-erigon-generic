@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  erigon:
+    build:
+      args:
+        NETWORK: gnosis
+    ports:
+      - "31305:31305/tcp"
+      - "31305:31305/udp"
+    image: "erigon.gnosis-erigon.dnp.dappnode.eth:0.1.1"
+

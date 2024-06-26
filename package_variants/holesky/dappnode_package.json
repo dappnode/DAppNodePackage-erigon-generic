@@ -1,0 +1,32 @@
+{
+  "name": "holesky-erigon.dnp.dappnode.eth",
+  "version": "0.1.1",
+  "links": {
+    "api": "http://holesky-erigon.dappnode:8545",
+    "apiEngine": "http://holesky-erigon.dappnode:8551",
+    "homepage": "https://github.com/ledgerwatch/erigon"
+  },
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
+  "exposable": [
+    {
+      "name": "Holesky Erigon JSON RPC",
+      "description": "JSON RPC endpoint for Erigon holesky",
+      "serviceName": "erigon",
+      "port": 8545
+    },
+    {
+      "name": "Holesky Erigon JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Erigon holesky",
+      "serviceName": "erigon",
+      "port": 8545
+    }
+  ],
+  "globalEnvs": [
+    {
+      "envs": ["CONSENSUS_CLIENT_HOLESKY"],
+      "services": ["erigon"]
+    }
+  ]
+}

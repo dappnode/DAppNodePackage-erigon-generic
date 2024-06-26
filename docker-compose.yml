@@ -1,0 +1,22 @@
+version: "3.5"
+services:
+  erigon:
+    build:
+      context: erigon
+      args:
+        UPSTREAM_VERSION: v2.60.2
+    volumes:
+      - "data:/home/erigon/.local/share"
+    environment:
+      EXTRA_OPTS: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
+    restart: unless-stopped
+    ulimits:
+      nofile:
+        soft: 1000000
+        hard: 1000000
+    deploy:
+      resources:
+        limits:
+          memory: 32768M
+volumes:
+  data: {}
