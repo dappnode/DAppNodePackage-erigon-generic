@@ -4,6 +4,7 @@ services:
     build:
       args:
         NETWORK: gnosis
+        P2P_PORT: 31305
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
