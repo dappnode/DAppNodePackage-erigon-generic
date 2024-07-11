@@ -2,7 +2,7 @@
   "upstream": [
     {
       "repo": "ledgerwatch/erigon",
-      "version": "v2.60.2",
+      "version": "v2.60.4",
       "arg": "UPSTREAM_VERSION"
     },
     {
