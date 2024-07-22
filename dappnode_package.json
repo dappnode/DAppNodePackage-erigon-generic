@@ -11,6 +11,8 @@
       "arg": "STAKER_SCRIPTS_VERSION"
     }
   ],
+  "description": "Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.",
+  "shortDescription": "Ethereum implementation on the efficiency frontier.",
   "type": "service",
   "chain": "ethereum",
   "categories": ["Blockchain"],

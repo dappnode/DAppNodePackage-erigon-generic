@@ -5,18 +5,20 @@ FROM thorax/erigon:${UPSTREAM_VERSION}
 ARG NETWORK
 ARG P2P_PORT
 ARG STAKER_SCRIPTS_VERSION
+ARG DATA_DIR
 
-USER root
-
-COPY /security /security
-COPY /erigon/entrypoint.sh /usr/local/bin/entrypoint.sh
-
-ENV DATADIR=/home/erigon/.local/share \
+ENV DATA_DIR=${DATA_DIR} \
     NETWORK=${NETWORK} \
     P2P_PORT=${P2P_PORT} \
+    SECURITY_PATH=/security \
     STAKER_SCRIPTS_URL=https://github.com/dappnode/staker-package-scripts/releases/download/${STAKER_SCRIPTS_VERSION}
 
 ADD ${STAKER_SCRIPTS_URL}/execution_tools.sh /etc/profile.d/
+
+USER root
+
+COPY /security ${SECURITY_PATH}
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +rx /usr/local/bin/entrypoint.sh /etc/profile.d/execution_tools.sh
 
