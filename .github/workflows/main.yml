@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: npx @dappnode/dappnodesdk build --provider remote --skip_save
+      - run: npx @dappnode/dappnodesdk github-action build --skip-save --variant mainnet
       
   # e2e-test:
   #   runs-on: mainnet
@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Publish
-        run: npx @dappnode/dappnodesdk publish patch --dappnode_team_preset --timeout 1h
+        run: npx @dappnode/dappnodesdk publish patch --dappnode_team_preset --timeout 1h --all-variants
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEVELOPER_ADDRESS: "0xf35960302a07022aba880dffaec2fdd64d5bf1c1"

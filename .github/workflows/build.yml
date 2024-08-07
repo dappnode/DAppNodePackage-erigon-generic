@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npx @dappnode/dappnodesdk github-action build
+      - run: npx @dappnode/dappnodesdk github-action build --skip-save --variant mainnet
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
