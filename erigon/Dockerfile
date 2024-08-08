@@ -1,6 +1,7 @@
 ARG UPSTREAM_VERSION
 
-FROM thorax/erigon:${UPSTREAM_VERSION}
+# Removes the v prefix from the version
+FROM thorax/erigon:${UPSTREAM_VERSION#v}-amd64
 
 ARG NETWORK
 ARG P2P_PORT
