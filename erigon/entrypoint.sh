@@ -15,6 +15,7 @@ exec erigon --datadir="${DATA_DIR}" \
     --http.vhosts=* \
     --http.corsdomain=* \
     --ws \
+    --ws.port=8546 \
     --private.api.addr=0.0.0.0:9090 \
     --metrics \
     --metrics.addr=0.0.0.0 \
