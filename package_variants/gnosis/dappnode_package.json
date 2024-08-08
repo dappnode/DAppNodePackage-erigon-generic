@@ -1,6 +1,6 @@
 {
   "name": "gnosis-erigon.dnp.dappnode.eth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "links": {
     "api": "http://gnosis-erigon.dappnode:8545",
     "apiEngine": "http://gnosis-erigon.dappnode:8551",
