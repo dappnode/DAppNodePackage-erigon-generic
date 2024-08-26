@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "erigon.dnp.dappnode.eth",
+            "service": "erigon.dappnode",
+            "__metrics_path__": "/debug/metrics/prometheus"
+        },
+        "targets": [
+            "erigon.dappnode:6060"
+        ]
+    }
+]

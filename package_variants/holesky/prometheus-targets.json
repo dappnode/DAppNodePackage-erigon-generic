@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "holesky-erigon.dnp.dappnode.eth",
+            "service": "holesky-erigon.dappnode",
+            "__metrics_path__": "/debug/metrics/prometheus"
+        },
+        "targets": [
+            "holesky-erigon.dappnode:6060"
+        ]
+    }
+]
