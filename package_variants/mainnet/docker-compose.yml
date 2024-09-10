@@ -8,5 +8,5 @@ services:
     ports:
       - "30405:30405/tcp"
       - "30405:30405/udp"
-    image: "erigon.erigon.dnp.dappnode.eth:0.1.43"
-
+    volumes:
+      - data:/home/erigon/.local/share

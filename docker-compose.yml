@@ -7,8 +7,6 @@ services:
         UPSTREAM_VERSION: 2.60.7
         STAKER_SCRIPTS_VERSION: v0.1.0
         DATA_DIR: /home/erigon/.local/share
-    volumes:
-      - data:/home/erigon/.local/share
     environment:
       EXTRA_OPTS: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
     restart: unless-stopped
