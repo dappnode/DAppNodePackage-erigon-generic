@@ -6,9 +6,6 @@
     "apiEngine": "http://erigon.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
-  "requirements": {
-    "minimumDappnodeVersion": "0.2.60"
-  },
   "exposable": [
     {
       "name": "Erigon JSON RPC",
