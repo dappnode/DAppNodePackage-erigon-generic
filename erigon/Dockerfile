@@ -19,7 +19,7 @@ USER root
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-RUN apk update && apk add curl && \
+RUN apt-get update && apt-get install curl && \
     chmod +rx /usr/local/bin/entrypoint.sh /etc/profile.d/execution_tools.sh
 
 ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
