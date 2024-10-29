@@ -1,7 +1,6 @@
 ARG UPSTREAM_VERSION
 
-# Removes the v prefix from the version
-FROM thorax/erigon:${UPSTREAM_VERSION#v}
+FROM erigontech/erigon:${UPSTREAM_VERSION}
 
 ARG NETWORK
 ARG P2P_PORT
@@ -20,7 +19,7 @@ USER root
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-RUN apk update && apk add curl && \
+RUN apt-get update && apt-get install -y curl && \
     chmod +rx /usr/local/bin/entrypoint.sh /etc/profile.d/execution_tools.sh
 
 ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
