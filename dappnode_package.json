@@ -2,12 +2,12 @@
   "upstream": [
     {
       "repo": "erigontech/erigon",
-      "version": "v2.60.10",
+      "version": "v2.61.0",
       "arg": "UPSTREAM_VERSION"
     },
     {
       "repo": "dappnode/staker-package-scripts",
-      "version": "v0.1.0",
+      "version": "v0.1.1",
       "arg": "STAKER_SCRIPTS_VERSION"
     }
   ],
