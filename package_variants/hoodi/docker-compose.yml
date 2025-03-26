@@ -1,0 +1,12 @@
+version: "3.5"
+services:
+  erigon:
+    build:
+      args:
+        NETWORK: hoodi
+        P2P_PORT: 30407
+    ports:
+      - "30407:30407/tcp"
+      - "30407:30407/udp"
+    volumes:
+      - data:/home/erigon/.local/share

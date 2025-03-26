@@ -1,0 +1,23 @@
+{
+  "name": "hoodi-erigon.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "links": {
+    "api": "http://hoodi-erigon.dappnode:8545",
+    "apiEngine": "http://hoodi-erigon.dappnode:8551",
+    "homepage": "https://github.com/ledgerwatch/erigon"
+  },
+  "exposable": [
+    {
+      "name": "Hoodi Erigon JSON RPC",
+      "description": "JSON RPC endpoint for Erigon hoodi",
+      "serviceName": "erigon",
+      "port": 8545
+    },
+    {
+      "name": "Hoodi Erigon JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Erigon hoodi",
+      "serviceName": "erigon",
+      "port": 8545
+    }
+  ]
+}

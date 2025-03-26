@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "hoodi-erigon.dnp.dappnode.eth",
+            "service": "hoodi-erigon.dappnode",
+            "__metrics_path__": "/debug/metrics/prometheus"
+        },
+        "targets": [
+            "hoodi-erigon.dappnode:6060"
+        ]
+    }
+]
