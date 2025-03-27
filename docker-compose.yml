@@ -4,8 +4,8 @@ services:
     build:
       context: erigon
       args:
-        UPSTREAM_VERSION: v2.61.1
-        STAKER_SCRIPTS_VERSION: v0.1.1
+        UPSTREAM_VERSION: v3.0.0
+        STAKER_SCRIPTS_VERSION: v0.1.2
         DATA_DIR: /home/erigon/.local/share
     environment:
       EXTRA_OPTS: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
