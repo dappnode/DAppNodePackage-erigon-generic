@@ -11,6 +11,7 @@ post_jwt_to_dappmanager "${JWT_PATH}"
 # shellcheck disable=SC2086
 exec erigon --datadir="${DATA_DIR}" \
     --chain="${NETWORK}" \
+    --externalcl \
     --http.addr=0.0.0.0 \
     --http.vhosts=* \
     --http.corsdomain=* \
