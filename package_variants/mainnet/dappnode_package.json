@@ -19,5 +19,8 @@
       "serviceName": "erigon",
       "port": 8545
     }
-  ]
+  ],
+  "warnings": {
+    "onMajorUpdate": "⚠️ IMPORTANT: AFTER UPDATING, YOU MUST DELETE THE VOLUMES OF YOUR ERIGON GNOSIS PACKAGE ⚠️. Erigon v3 requires a full resynchronization, so removing the old volumes is mandatory. Note that Erigon now runs in non-archival mode by default. For instructions on deleting volumes, visit: https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/info"
+  }
 }
