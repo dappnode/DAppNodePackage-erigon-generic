@@ -1,4 +1,4 @@
 # Erigon
 Erigon Dappnode Package
 
-https://github.com/ledgerwatch/erigon
+https://github.com/erigontech/erigon
