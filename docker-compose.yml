@@ -4,7 +4,7 @@ services:
     build:
       context: erigon
       args:
-        UPSTREAM_VERSION: v3.0.4
+        UPSTREAM_VERSION: v3.0.15
         STAKER_SCRIPTS_VERSION: v0.1.2
         DATA_DIR: /home/erigon/.local/share
     environment:
