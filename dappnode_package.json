@@ -2,7 +2,7 @@
   "upstream": [
     {
       "repo": "erigontech/erigon",
-      "version": "v3.1.0",
+      "version": "v3.2.0",
       "arg": "UPSTREAM_VERSION"
     },
     {
