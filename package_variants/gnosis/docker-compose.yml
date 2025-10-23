@@ -5,6 +5,7 @@ services:
       args:
         NETWORK: gnosis
         P2P_PORT: 31305
+        DATA_DIR: /home/gnosis-erigon/.local/share
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
