@@ -5,8 +5,9 @@ services:
       args:
         NETWORK: hoodi
         P2P_PORT: 30407
+        DATA_DIR: /home/hoodi-erigon/.local/share
     ports:
       - "30407:30407/tcp"
       - "30407:30407/udp"
     volumes:
-      - data:/home/erigon/.local/share
+      - data:/home/hoodi-erigon/.local/share
