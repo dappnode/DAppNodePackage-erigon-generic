@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ipfs-dev-gateway
     steps:
       - uses: actions/checkout@v4
       - run: npx @dappnode/dappnodesdk github-action build --skip-save --variant mainnet --content_provider=http://10.200.200.7:5001 --eth_provider=https://web3.dappnode.net
