@@ -1,9 +1,9 @@
 {
   "name": "gnosis-erigon.dnp.dappnode.eth",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "requirements": {
     "minimumDappnodeVersion": "0.3.12",
-    "notInstalledPackages": ["nimbus-gnosis.dnp.dappnode.eth"]  
+    "notInstalledPackages": ["nimbus-gnosis.dnp.dappnode.eth"]
   },
   "links": {
     "api": "http://gnosis-erigon.dappnode:8545",
