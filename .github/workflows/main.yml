@@ -34,6 +34,9 @@ jobs:
     if: github.event_name == 'push' || github.event_name == 'repository_dispatch'
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Publish
         run: npx @dappnode/dappnodesdk publish patch --github_release --timeout 1h --all-variants --content_provider=http://10.200.200.7:5001 --eth_provider=https://web3.dappnode.net
         env:
