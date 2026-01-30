@@ -1,6 +1,6 @@
 {
   "name": "gnosis-erigon.dnp.dappnode.eth",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "requirements": {
     "minimumDappnodeVersion": "0.3.12",
     "notInstalledPackages": ["nimbus-gnosis.dnp.dappnode.eth"]
