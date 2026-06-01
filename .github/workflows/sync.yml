@@ -23,7 +23,7 @@ jobs:
             -e EXECUTION_CLIENT='erigon' \
             -e CONSENSUS_CLIENT=${{ github.event.inputs.consensus_client }} \
             -e NETWORK=hoodi \
-            ghcr.io/dappnode/staker-test-util/test-runner:latest
+            dappnode/tropibot:latest test-runner
 
   notify:
     needs: sync
