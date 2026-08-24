@@ -1,25 +1,25 @@
 {
-  "name": "erigon.dnp.dappnode.eth",
-  "version": "1.0.3",
+  "exposable": [
+    {
+      "description": "JSON RPC endpoint for Erigon mainnet",
+      "name": "Erigon JSON RPC",
+      "port": 8545,
+      "serviceName": "erigon"
+    },
+    {
+      "description": "JSON RPC WebSocket endpoint for Erigon mainnet",
+      "name": "Erigon JSON RPC (WS)",
+      "port": 8545,
+      "serviceName": "erigon"
+    }
+  ],
   "links": {
     "api": "http://erigon.dappnode:8545",
     "apiEngine": "http://erigon.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
-  "exposable": [
-    {
-      "name": "Erigon JSON RPC",
-      "description": "JSON RPC endpoint for Erigon mainnet",
-      "serviceName": "erigon",
-      "port": 8545
-    },
-    {
-      "name": "Erigon JSON RPC (WS)",
-      "description": "JSON RPC WebSocket endpoint for Erigon mainnet",
-      "serviceName": "erigon",
-      "port": 8545
-    }
-  ],
+  "name": "erigon.dnp.dappnode.eth",
+  "version": "1.0.4",
   "warnings": {
     "onMajorUpdate": "⚠️ IMPORTANT: AFTER UPDATING, YOU MUST DELETE THE VOLUMES OF YOUR ERIGON PACKAGE ⚠️. Erigon v3 requires a full resynchronization, so removing the old volumes is mandatory. Note that Erigon now runs in non-archival mode by default. For instructions on deleting volumes, visit: https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/info"
   }
