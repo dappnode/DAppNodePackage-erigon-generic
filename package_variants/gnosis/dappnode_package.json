@@ -1,32 +1,34 @@
 {
-  "name": "gnosis-erigon.dnp.dappnode.eth",
-  "version": "1.0.6",
-  "requirements": {
-    "minimumDappnodeVersion": "0.3.12",
-    "notInstalledPackages": ["nimbus-gnosis.dnp.dappnode.eth"]
-  },
+  "exposable": [
+    {
+      "description": "JSON RPC endpoint for Erigon in Gnosis Chain",
+      "name": "Erigon JSON RPC",
+      "port": 8545,
+      "serviceName": "erigon"
+    },
+    {
+      "description": "JSON RPC WebSocket endpoint for Erigon in Gnosis Chain",
+      "name": "Erigon JSON RPC (WS)",
+      "port": 8545,
+      "serviceName": "erigon"
+    }
+  ],
   "links": {
     "api": "http://gnosis-erigon.dappnode:8545",
     "apiEngine": "http://gnosis-erigon.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
-  "exposable": [
-    {
-      "name": "Erigon JSON RPC",
-      "description": "JSON RPC endpoint for Erigon in Gnosis Chain",
-      "serviceName": "erigon",
-      "port": 8545
-    },
-    {
-      "name": "Erigon JSON RPC (WS)",
-      "description": "JSON RPC WebSocket endpoint for Erigon in Gnosis Chain",
-      "serviceName": "erigon",
-      "port": 8545
-    }
-  ],
+  "name": "gnosis-erigon.dnp.dappnode.eth",
   "optionalDependencies": {
     "lighthouse-gnosis.dnp.dappnode.eth": ">=0.1.15",
-    "teku-gnosis.dnp.dappnode.eth": ">=0.1.15",
-    "lodestar-gnosis.dnp.dappnode.eth": ">=0.1.32"
-  }
+    "lodestar-gnosis.dnp.dappnode.eth": ">=0.1.32",
+    "teku-gnosis.dnp.dappnode.eth": ">=0.1.15"
+  },
+  "requirements": {
+    "minimumDappnodeVersion": "0.3.12",
+    "notInstalledPackages": [
+      "nimbus-gnosis.dnp.dappnode.eth"
+    ]
+  },
+  "version": "1.0.8"
 }
