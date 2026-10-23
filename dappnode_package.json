@@ -26,7 +26,7 @@
     {
       "arg": "UPSTREAM_VERSION",
       "repo": "erigontech/erigon",
-      "version": "v3.8.0"
+      "version": "v3.8.1"
     },
     {
       "arg": "STAKER_SCRIPTS_VERSION",
